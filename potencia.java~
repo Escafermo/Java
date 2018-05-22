@@ -1,0 +1,17 @@
+class Potencia
+{
+
+  double calculaPotencia ( double a , int b )
+  {
+    int cont = 1; 
+    
+    while ( cont <= a )
+    {
+      a = a * a;
+      cont = b;
+      cont++;
+    }
+   
+  return a;
+  }
+}

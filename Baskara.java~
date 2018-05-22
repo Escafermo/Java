@@ -1,0 +1,54 @@
+class Baskara
+{
+  double _a;
+  double _b;
+  double _c;
+  double _delta;  
+  
+  void carregaValores (double a, b, c)
+  {
+    _a = a;
+    _b = b;
+    _c = c;
+  _delta = delta ();
+  }
+  
+  double delta ()
+  {
+    return _b*_b - 4 * _a * _c
+  }
+  
+  int numeroDeRaizes ()
+  {
+    if ( _delta < 0 )
+      System.out.println ("Nenhuma raiz real!")
+    else if ( _delta == 0)
+      System.out.println ("Uma raiz real!")
+    else 
+      System.out.println ("Duas raizes reais!")
+  }
+  
+  double imprimeRaizesReais ()
+  {
+    int n = numeroDeRaizesReais;
+    
+    if ( n == 0)
+      System.out.println ("Nao ha raizes reais!");
+    else if ( n == 1)
+      System.out.println ("Uma raiz real "  (-_b/(2*_a)));
+    else 
+    {
+      double rd = java.lang.Math.sqrt (_delta);
+      double x1 = (-_b - rd)/(2*_a);
+      double x2 = (-_b + rd)/(2*_a);
+      System.print.ln ("Duas raizes reais: " + x1 " e " + x2)
+    }
+           
+  }
+    
+}
+
+
+
+
+

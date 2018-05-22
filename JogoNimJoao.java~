@@ -1,0 +1,44 @@
+class JogoNim
+{
+  int n;               //Número de peças inicial
+  int m;               //Número de peças máximo a retirar
+  int t = n % (m+1);   //Número de peças a serem retiradas pelo computador
+  int na;              //Número de peças atual
+  
+  void novoJogo ( int n , int m )
+  {
+    if ( n < m )
+      System.out.prinln ("Inicialização não permitida! Número inicial de peças menor do que número máximo de peças a serem retiradas!");
+
+    else if ( n == m )
+      System.out.prinln ("Inicialização não permitida! Número inicial de peças igual ao número máximo de peças a serem retiradas!");
+    
+    else if ( n % (m+1) == 0 )
+      System.out.prinln ("Por favor, comece...");
+      
+    else if ( n % (m+1) != 0 )
+    {
+      System.out.println ("Vou começar.")
+         na = n - t;
+      System.out.println ("Agora o número de peças é " + na + ". Sua vez!");
+    
+    }
+    
+  }
+  
+  void novaRodada ();
+  {
+    if 
+    
+        
+  }
+  
+  
+  
+  
+}
+
+
+
+
+

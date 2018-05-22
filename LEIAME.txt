@@ -1,0 +1,111 @@
+/*******************************************************************/
+/** MAC 115 - Introducao a Computacao                             **/
+/** IME-USP - Segundo Semestre de 2009                            **/
+/** Professor: Marecelo Finger                                    **/
+/**                                                               **/
+/** Segundo Exercicio-Programa                                    **/
+/** Arquivo: LEIAME.txt                                           **/
+/**                                                               **/
+/** Bruno Malta - Numero Usp: 5126225                             **/
+/** Joao Pedro Maldosa - Numero Usp: 6800938                      **/
+/**                                                               **/
+/**        01/11/2009                                             **/
+/*******************************************************************/
+
+
+Esse arquivo serve apenas para explicar como por em funcionamento o EP2, ou seja, como utilizar a interface.
+
+1 - Calcular funcoes
+	
+	CalculaFuncaoMatematica c = new CalculaFuncaoMatematica ();
+	
+	Para definir uma precisao x (exemplo: x=0.001 sera precisao de tres casas decimais, caso contrario o padrao sao oito 				     casas decimais)
+		c.definePrecisao (x)
+
+	Para calcular seno (x)
+		c.calculaSeno (x)
+
+	Para calcular cosseno (x)
+		c.calculaCosseno (x)
+
+	Para calcular raiz quadrada (x)
+		c.calculaRaiz (x)
+
+	Para calcular ln (x)
+		c.calculaLn (x)
+
+	Para calcular exponencial (x)
+		c.calculaExponencial (x)
+
+
+2 - Testes automatizados
+
+	Para testar seno
+		TestaSeno ts = new TestaSeno ();
+		ts.testaSenoZero()
+		ts.testaSenoPiSobreDois()
+		ts.testaSenoMenosPiSobreDois()
+		ts.testaSenoPiSobreQuatro()
+		ts.testaSenoMenosPiSobreQuatro()
+
+	Para testar cosseno
+		TestaCosseno tc = new TestaCosseno ();
+		tc.testaCossenoZero()
+		tc.testaCossenoPiSobreDois()
+		tc.testaCossenoMenosPiSobreDois()
+		tc.testaCossenoPiSobreQuatro()
+		tc.testaCossenoMenosPiSobreQuatro()
+
+	Para testar raiz quadrada
+		TestaRaizQuadrada tr = new TestaRaizQuadrada ();
+		tr.testaRaizMeio()
+		tr.testaRaizUm()
+		tr.testaRaizUmQuarto()
+
+	Para testar ln
+		TestaLn tl = new TestaLn ();
+		tl.testaLnUm()
+		tl.testaLnMeio()
+		tl.testaLnUmQuarto()
+
+	Para testar exponencial
+		TestaExp te = new TestaExp ();
+		te.testaExpUm()
+		te.testaExpMeio()
+		te.testaExpZero()
+
+	Para testar propriedades conhecidas das funcoes
+		TestaPropriedades tp = new TestaPropriedades ();
+		tp.testaTeoremaFundamentalDaTrigonometriaPiSobreDois()
+		tp.testaTeoremaFundamentalDaTrigonometriaPiSobreQuatro()
+		tp.testaTeoremaFundamentalDaTrigonometriaUm()
+		tp.testaExpDeLnMeio()
+		tp.testaExpDeLnUmQuarto()
+		tp.testaExpDeLnUm()
+		tp.testaExpDeLnUmQuinto()
+
+	Para testar todas as funcoes matematicas
+		TestaTudo t = new TestaTudo ();
+		t.testaTudo()
+
+
+3 - Avaliacao de desempenho
+
+	MedidorDeDesempenho m = new MedidorDeDesempenho();
+
+	Para tempo de Seno
+		m.tempoSeno()
+	Para tempo de Cosseno
+		m.tempoCosseno()
+	Para tempo de Raiz Quadrada
+		m.tempoRaiz()
+	Para tempo de Ln
+		m.tempoLn()
+	Para tempo de Exponencial
+		m.tempoExp()
+
+	Para imprimir o relatorio de desempenho
+		m.imprimeRelatorioDeDesempenho()
+
+	Para porcentagem de ganho de tempo de seno utilizando float ao invez de double
+		m.porcentagemTempoSenoFloat()

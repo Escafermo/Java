@@ -1,0 +1,22 @@
+class FunçõesMatemáticas
+{
+  
+  double calculaSeno ( double x)
+  {
+    double seno = 
+    return seno;
+  }
+  
+  double calculaCoseno ( double x )
+  {
+    double coseno = 
+    return coseno;
+  }
+  
+  double calculaRaizQuadrada ( double x )
+  {
+    double raiz = java.Math.srqt(x)
+    return x;
+  }
+  
+}

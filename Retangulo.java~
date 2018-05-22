@@ -1,0 +1,19 @@
+class Retangulo
+{
+  double lado1;
+  double lado2;
+  
+  void carregaLados ( double l1 , double l2 )
+  {
+    lado1 = l1;
+    lado2 = l2;
+  }
+  
+  double calculaPerimetro ()
+  {
+    return 2*(l1+l2);
+  }
+  
+  double calculaArea ()
+    return l1*l2;
+}

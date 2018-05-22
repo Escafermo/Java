@@ -1,0 +1,7 @@
+nanotime depois
+nanotime antes
+
+depois - antes = tempo total
+
+rodar em loop 100 vezes, com contador
+usar contador para dividir e fazer a média do tempo

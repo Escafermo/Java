@@ -1,0 +1,57 @@
+class RaizQuadrada
+{
+  void testaRaizDeMeio() 
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaRaiz(0.5);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.707106781, 0.00000001) == false)
+      System.out.println("Raiz(0.5): Ops! Erro");
+    else
+      System.out.println("Raiz(0.5): Sucesso!");
+  }
+  
+  void testaCossenoPiSobreDois() 
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaCosseno(1.5707);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.0000963331107, 0.00000001) == false)
+      System.out.println("Cosseno(Pi/2): Ops! Erro");
+    else
+      System.out.println("Cosseno(Pi/2): Sucesso!");
+  }
+  
+  void testaCossenoMenosPiSobreDois() 
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaCosseno(-1.5707);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.0000963331107, 0.00000001) == false)
+      System.out.println("Cosseno(-Pi/2): Ops! Erro");
+    else
+      System.out.println("Cosseno(-Pi/2): Sucesso!");
+  }
+  
+  void testaCossenoPiSobreQuatro() 
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaCosseno(0.7853);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.7071761896691259, 0.00000001) == false)
+      System.out.println("Cosseno(Pi/4): Ops! Erro");
+    else
+      System.out.println("Cosseno(Pi/4): Sucesso!");
+  }
+  
+    void testaCossenoMenosPiSobreQuatro() 
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaCosseno(-0.7853);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.7071761896691259, 0.00000001) == false)
+      System.out.println("Cosseno(-Pi/4): Ops! Erro");
+    else
+      System.out.println("Cosseno(-Pi/4): Sucesso!");
+  }
+}

@@ -1,0 +1,22 @@
+class teste ()
+
+double funcaoDoSeno2 ( float x, int k )  // Calcula o k-esimo termo da somatoria da serie de Taylor do seno (x)
+  {
+    return  ((potencia(-1,k) * potencia(x,(2*k+1))/fat(2*k+1)));
+
+  }
+  
+    
+  double calculaSeno (float x)  // Metodo para calcular seno (x)
+  {
+   double soma = 0; 
+   int k = 0;
+   
+   while ( modulo ( funcaoDoSeno ( x, k )) >= p )
+    {
+      soma = soma + funcaoDoSeno (x, k);   
+      k++;
+    }
+    
+    return soma;
+  }

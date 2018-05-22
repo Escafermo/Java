@@ -1,0 +1,7 @@
+class Conversor1
+{
+{
+  double celsiusPF ( double c)
+    return c + 10
+}
+}

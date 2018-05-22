@@ -1,0 +1,4 @@
+class Conversor
+{
+  return 12*2
+}

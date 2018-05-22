@@ -1,0 +1,10 @@
+class Fatorial
+{
+  int calculaFatorial ( int n )
+  {
+    int cont = 0
+    int result = 1;
+  }
+  
+  
+}

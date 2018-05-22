@@ -1,0 +1,26 @@
+class Inteiro
+{
+ int _valor;
+  
+  void carregaValor (int val )
+  {
+    _valor = val;
+  }
+  
+  int devolveValor ();
+  {
+    return _valor
+  }
+  
+  int devolveValorAbsoluto()
+  {
+    _valor = -val
+      return _valor
+  }
+  
+  void imprime ()
+  {
+    return _valor;
+  }
+  
+}

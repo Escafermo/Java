@@ -1,0 +1,101 @@
+/*******************************************************************/
+/** MAC 115 - Introducao a Computacao                             **/
+/** IME-USP - Segundo Semestre de 2009                            **/
+/** Professor: Marecelo Finger                                    **/
+/**                                                               **/
+/** Segundo Exercicio-Programa                                    **/
+/** Arquivo: TestaPropriedades.java                               **/
+/**                                                               **/
+/** Bruno Malta - Numero Usp:                                     **/
+/** Joao Pedro Maldosa - Numero Usp:                              **/
+/**                                                               **/
+/**        01/11/2009                                             **/
+/*******************************************************************/
+
+
+
+class TestaPropriedades
+{
+
+  void testaTeoremaFundamentalDaTrigonometriaPiSobreDois()  // Metodo que testa o teorema fundamental da trigonometria
+                                                            // para Pi sobre dois: x=1.5707
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaTeorema(1.5707);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 1.0, 0.000001) == false)
+      System.out.println("Teorema(Pi/2): Ops! Erro");
+    else
+      System.out.println("Teorema(Pi/2): Sucesso!");
+  }
+  
+  void testaTeoremaFundamentalDaTrigonometriaPiSobreQuatro() // Metodo que testa o teorema fundamental da trigonometria
+                                                             // para Pi sobre quatro: x=0.707
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaTeorema(0.707);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 1.0, 0.000001) == false)
+      System.out.println("Teorema(Pi/4): Ops! Erro");
+    else
+      System.out.println("Teorema(Pi/4): Sucesso!");
+  }
+  
+    void testaTeoremaFundamentalDaTrigonometriaUm() // Metodo que testa o teorema fundamental da trigonometria
+                                                    // para um: x=1
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaTeorema(1.0);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 1.0, 0.000001) == false)
+      System.out.println("Teorema(1): Ops! Erro");
+    else
+      System.out.println("Teorema(1): Sucesso!");
+  }
+    
+    
+  void testaExpDeLnMeio()  // Metodo que testa o exponencial do ln de (x) para meio: x=0.5
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaExpLn(0.5);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.49999999834785, 0.000001) == false)
+      System.out.println("ExpDeLn(0.5): Ops! Erro");
+    else
+      System.out.println("ExpDeLn(0.5): Sucesso!");
+  }
+  
+  void testaExpDeLnUmQuarto()  // Metodo que testa o exponencial do ln de (x) para um quarto: x=0.25
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaExpLn(0.25);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.25000000687848, 0.000001) == false)
+      System.out.println("ExpDeLn(0.25): Ops! Erro");
+    else
+      System.out.println("ExpDeLn(0.25): Sucesso!");
+  }
+  
+  void testaExpDeLnUm()  // Metodo que testa o exponencial do ln de (x) para um: x=1
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaExpLn(1.0);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 1.0, 0.000001) == false)
+      System.out.println("ExpDeLn(1.0): Ops! Erro");
+    else
+      System.out.println("ExpDeLn(1.0): Sucesso!");
+  }
+  
+    void testaExpDeLnUmQuinto()  // Metodo que testa o exponencial do ln de (x) para um quinto: x=0.2
+  {
+    CalculaFuncaoMatematica c = new CalculaFuncaoMatematica();
+    double resultado = c.calculaExpLn(0.2);
+    TestaTudo comparador = new TestaTudo();
+    if (comparador.igual(resultado, 0.20000000116647, 0.000001) == false)
+      System.out.println("ExpDeLn(0.2): Ops! Erro");
+    else
+      System.out.println("ExpDeLn(0.2): Sucesso!");
+  }
+    
+}
